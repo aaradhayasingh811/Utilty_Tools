@@ -1,0 +1,21 @@
+
+
+  .container {
+    width: 300px;
+    margin: auto;
+  }
+  
+  #display {
+    width: 326px;
+    height: 100px;
+    background-color: #dee2e6;
+    border: 2px solid rgb(2, 104, 107);
+
+  }
+  
+  input[type="button"] {
+    width: 80px;
+    height: 70px;
+    font-size: 20px;
+    border: 2px solid rgb(2, 104, 107);
+  }

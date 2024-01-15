@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- nav -->
+      
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Twelfth navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+        <ul class="navbar-nav">
+          <li class="nav-item me-5">
+            <a class="nav-link active" aria-current="page" href="#">Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Adblocker</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown10">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- nav end -->
+
+    <div class="container mt-5">
+       
+        <input type="text" id="display" disabled>
+        <table>
+          <tr>
+            <td><input type="button" value="7" onclick="appendToDisplay('7')"></td>
+            <td><input type="button" value="8" onclick="appendToDisplay('8')"></td>
+            <td><input type="button" value="9" onclick="appendToDisplay('9')"></td>
+            <td><input type="button" value="/" onclick="appendToDisplay('/')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="4" onclick="appendToDisplay('4')"></td>
+            <td><input type="button" value="5" onclick="appendToDisplay('5')"></td>
+            <td><input type="button" value="6" onclick="appendToDisplay('6')"></td>
+            <td><input type="button" value="*" onclick="appendToDisplay('*')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1" onclick="appendToDisplay('1')"></td>
+            <td><input type="button" value="2" onclick="appendToDisplay('2')"></td>
+            <td><input type="button" value="3" onclick="appendToDisplay('3')"></td>
+            <td><input type="button" value="-" onclick="appendToDisplay('-')"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="0" onclick="appendToDisplay('0')"></td>
+            <td><input type="button" value="." onclick="appendToDisplay('.')"></td>
+            <td><input type="button" value="=" onclick="calculateResult()"></td>
+            <td><input type="button" value="+" onclick="appendToDisplay('+')"></td>
+          </tr>
+          <tr>
+            <td colspan="4"><input type="button" value="Clear" onclick="clearDisplay()"></td>
+          </tr>
+        </table>
+      </div>
+    
+<!-- script -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

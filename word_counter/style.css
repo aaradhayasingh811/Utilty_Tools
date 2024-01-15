@@ -1,0 +1,35 @@
+.navbar{
+    background-color:rgb(2, 104, 107) ;
+    color: white;
+}
+
+.navbar a{
+    color: white;
+
+}
+
+.navbar a :hover{
+    color : white;
+}
+
+.btn{
+background-color:rgb(2, 104, 107) ;
+    color: white;
+}
+
+textarea{
+    border: 2px solid rgb(2, 104, 107) ;
+}
+
+.p{
+    border: 2px solid rgb(2, 104, 107);
+    height: 10%;
+}
+
+.summ{
+    display: none;
+}
+
+.hell{
+    display: block;
+}
